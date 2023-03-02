@@ -26,7 +26,7 @@ public class boj1929 {
         }
         for (int i = 2; (i*i) <=m; ++i) {
             if (primeList.get(i)){
-                for (int j = i*i; j <=m; j+=i) {
+                for (int j = i*2; j <=m; j+=i) {
                     primeList.set(j,false);
                 }
             }
